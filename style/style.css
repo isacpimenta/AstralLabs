@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
@@ -16,8 +16,8 @@
     --cor6: #45E6AB;
     --cor7: #45e6abc0;
 
-    --font1: 'Passion One', cursive;
-    --font2: 'Sriracha', cursive;
+    --font1: 
+    --font2: 'Ysabeau Infant', sans-serif;
     --font3: 'Open Sans', sans-serif;
 }
 
@@ -30,6 +30,7 @@ html, body {
     min-height: 100vh;
     background-color:#3e3557;
     font-family: var(--font3);
+    line-height: 2em;
 }
 
 header {
@@ -112,6 +113,8 @@ main {
 main h1 {
     color: var(--cor02);
     font-family: var(--font2);
+    margin: 25px;
+    text-align: center;
 }
 
 main h2 {
@@ -129,7 +132,7 @@ main p {
     margin: 15px 30px;
     text-align: justify;
     text-indent: 10px;
-    line-height: 1.5em;
+    line-height: 2em;
 }
 
 main > section > img { 
@@ -138,16 +141,71 @@ main > section > img {
     max-height: 50px;
     margin: 20px;
 }
+section.centralizar > img {
+    margin: auto;
+}
 
 section.centralizar > p {
-    display: inline;
+    display: inline-block;
     margin: 20px 0px;
+    font-family: var(--font2);
+    line-height: 2.5em;
+    text-indent: 0px;
+    text-align: justify;
 }
 
 .jogo {
     display: inline;
     max-width: 450px;
     max-height: 1000px;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.game > p {
+    text-indent: 0;
+    margin: 0;
+}
+
+.game > a {    
+    width: 8vw;
+    height: 5vh;
+    margin: 0;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: rgba(0, 255, 255, 0.767);
+    cursor: pointer;
+
+    box-shadow: 0px 10px 40px -12px #00000056;
+
+}
+
+.game > a::after {
+    width: 8vw;
+    height: 5vh;
+    margin: 0 0 0 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: rgba(0, 255, 255, 0.767);
+    cursor: pointer;
+
+    box-shadow: 0px 10px 40px -12px #00000056;
 }
 
 footer {
@@ -171,4 +229,12 @@ footer a:hover {
     background-color: #341c6b;
     padding: 2px 6px;
     border-radius: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    header > img {
+        margin-top: 25px;
+        width: 80vw;
+        height: 15vh;
+    }
 }
