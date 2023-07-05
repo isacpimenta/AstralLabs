@@ -79,6 +79,10 @@ section > a {
 }
 
 @media only screen and (max-width: 600px) {
+    html, body {
+        min-height: 100vh;
+    }
+    
     h2 {
         text-align: center;
     }

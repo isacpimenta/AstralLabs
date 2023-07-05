@@ -28,7 +28,6 @@
 
 html, body {
     min-height: 100vh;
-    min-width: 100vw;
     background-color:#3e3557;
     font-family: 'Ysabeau Infant', sans-serif;;
     font-weight: normal;
@@ -149,10 +148,6 @@ main > section > img {
 .logo {
     display: flex;
     justify-content: center;
-}
-
-section.centralizar > img {
-    
 }
 
 section.centralizar > p {
@@ -300,6 +295,10 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+    html, body {
+        min-height: 100vh;
+    }
+    
     header > img {
         margin-top: 25px;
         width: 80vw;
