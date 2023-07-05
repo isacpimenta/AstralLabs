@@ -209,6 +209,9 @@ hr {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
     background-color: #201b2c;
     text-align: center;
     color: white;
