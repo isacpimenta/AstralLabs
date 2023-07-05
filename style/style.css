@@ -28,9 +28,13 @@
 
 html, body {
     min-height: 100vh;
+    min-width: 100vw;
     background-color:#3e3557;
-    font-family: var(--font3);
-    line-height: 2em;
+    font-family: 'Ysabeau Infant', sans-serif;;
+    font-weight: normal;
+    line-height: 2.5em;
+    text-indent: 0px;
+    text-align: justify;
 }
 
 header {
@@ -141,13 +145,19 @@ main > section > img {
     max-height: 50px;
     margin: 20px;
 }
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
 section.centralizar > img {
-    margin: auto;
+    
 }
 
 section.centralizar > p {
     display: inline-block;
-    margin: 20px 0px;
+    margin: 20px 30px;
     font-family: var(--font2);
     line-height: 2.5em;
     text-indent: 0px;
