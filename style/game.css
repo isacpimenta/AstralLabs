@@ -29,8 +29,8 @@ h2 {
     margin-bottom: 50px;
     font-family: var(--font3);
     color: grey;
+    text-align: center;
 }
-
 .conteiner {
     border: .8px solid black;
     border-radius: 5px;
@@ -41,14 +41,28 @@ h2 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 10vh;
-    max-width: 84vw;
+    width: 85vw;
+    height: 30vh;
 }
 
 .cartas {
     margin: 0 15px;
     border: 1px solid black;
     border-radius: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+
+section > a {
+    display: flex;
+    width: 100px;
+    margin: 0 3px;
+    /* width: 500px;
+    height: 100px;
+    margin: 0 15px;
+    border: 1px solid black;
+    border-radius: 5px; */
 }
 
 #um {
