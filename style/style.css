@@ -242,6 +242,21 @@ li {
     margin-left: 15px;
 }
 
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+section.contact > img {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.contact > p {
+    margin: 25px 10px ;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -274,5 +289,9 @@ footer a:hover {
         margin-top: 25px;
         width: 80vw;
         height: 15vh;
+    }
+
+    footer {
+        font-size: 1em;
     }
 }
