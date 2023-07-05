@@ -218,6 +218,7 @@ footer {
     margin-top: 50px;
     font-size: 1.2em;
     padding: 5px;
+    flex: 1;
 }
 
 footer a {
