@@ -31,31 +31,54 @@ h2 {
     color: grey;
 }
 
+.conteiner {
+    border: .8px solid black;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
 .fases {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
     min-height: 10vh;
-    min-width: 73vw;
-    margin-bottom: 80px;
+    max-width: 84vw;
 }
 
 .cartas {
     margin: 0 15px;
-    min-width: 20vw;
-    min-height: 45vh;
     border: 1px solid black;
+    border-radius: 5px;
 }
 
 #um {
-    background-color: blue;
+    background-color: rgb(0, 255, 0);
+
 }
 
 #dois {
-    background-color: violet;
+    background-color: yellow;
 } 
 
 #tres {
-    background-color: green;
+    background-color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    h2 {
+        text-align: center;
+    }
+
+    .fases {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 85vw;
+        height: 30vh;
+    }
+    
+    .cartas {
+        width: 500px;
+        height: 100px;
+    }
 }
